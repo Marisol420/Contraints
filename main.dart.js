@@ -31142,7 +31142,7 @@ ad(){return new A.F1(B.l)}}
 A.F1.prototype={
 aD(){var s=this
 s.d=1
-s.f="Container(color: Colors.pink)"
+s.f="Container(color: Colors.blue)"
 s.r=u.m
 s.bf()},
 aN(a){var s,r,q=this
@@ -31200,87 +31200,87 @@ $S:0}
 A.yh.prototype={
 F(a){var s=null
 return A.ba(s,s,B.A,s,s,s,s,s)},
-gbo(){return"Container(color: Colors.pink)"},
+gbo(){return"Container(color: Colors.blue)"},
 gbr(){return u.m}}
 A.ys.prototype={
 F(a){var s=null
 return A.ba(s,s,B.A,s,100,s,s,100)},
-gbo(){return"Container(width: 100, height: 100, color: Colors.pink)"},
+gbo(){return"Container(width: 100, height: 100, color: Colors.blue)"},
 gbr(){return"El Contenedor rosa quiere ser 100x100, pero no puedeporque la pantalla obliga a que sea exactamente del mismo tama\xf1o que la pantalla.\n\nEntonces el Contenedor llena la pantalla."}}
 A.yD.prototype={
 F(a){var s=null
 return A.eH(A.ba(s,s,B.A,s,100,s,s,100),s,s)},
-gbo(){return"Center(\n   child: Container(width: 100, height: 100, color: Colors.pink))"},
+gbo(){return"Center(\n   child: Container(width: 100, height: 100, color: Colors.blue))"},
 gbr(){return"La pantalla obliga al Centro a ser exactamente del mismo tama\xf1o que la pantalla, para que el Centro llene la pantalla.\n\nEl Centro le dice al Contenedor que puede ser del tama\xf1o que quiera, pero no m\xe1s grande que la pantalla.Ahora el contenedor puede ser de 100x100."}}
 A.yE.prototype={
 F(a){var s=null
 return new A.jE(B.uA,s,s,A.ba(s,s,B.A,s,100,s,s,100),s)},
-gbo(){return"Align(\n   alignment: Alignment.bottomRight,\n   child: Container(width: 100, height: 100, color: Colors.pink))"},
+gbo(){return"Align(\n   alignment: Alignment.bottomRight,\n   child: Container(width: 100, height: 100, color: Colors.blue))"},
 gbr(){return"Esto es diferente del ejemplo anterior en que usa Alinear en lugar de Centrar.\n\nAlign tambi\xe9n le dice al Contenedor que puede tener el tama\xf1o que desee, pero si hay espacio vac\xedo, no centrar\xe1 el Contenedor. En su lugar, alinea el Contenedor en la parte inferior derecha del espacio disponible."}}
 A.yF.prototype={
 F(a){var s=null
 return A.eH(A.ba(s,s,B.A,s,1/0,s,s,1/0),s,s)},
-gbo(){return"Center(\n   child: Container(\n              color: Colors.pink,\n              width: double.infinity,\n              height: double.infinity))"},
+gbo(){return"Center(\n   child: Container(\n              color: Colors.blue,\n              width: double.infinity,\n              height: double.infinity))"},
 gbr(){return"La pantalla obliga al Centro a ser exactamente del mismo tama\xf1o que la pantalla, para que el Centro llene la pantalla.\n\nEl Centro le dice al Contenedor que puede ser del tama\xf1o que quiera, pero no m\xe1s grande que la pantalla.El Contenedor quiere tener un tama\xf1o infinito, pero como no puede ser m\xe1s grande que la pantalla, solo llena la pantalla."}}
 A.yG.prototype={
 F(a){var s=null
 return A.eH(A.ba(s,s,B.A,s,s,s,s,s),s,s)},
-gbo(){return"Center(child: Container(color: Colors.pink))"},
+gbo(){return"Center(child: Container(color: Colors.blue))"},
 gbr(){return"La pantalla obliga al Centro a ser exactamente del mismo tama\xf1o que la pantalla, para que el Centro llene la pantalla.El Centro le dice al Contenedor que puede ser del tama\xf1o que quiera, pero no m\xe1s grande que la pantalla.Dado que el Contenedor no tiene un ni\xf1o ni un tama\xf1o fijo, decide que quiere ser lo m\xe1s grande posible, por lo que llena toda la pantalla.\n\n\xbfPero por qu\xe9 el Contenedor decide eso? Simplemente porque esa es una decisi\xf3n de dise\xf1o de quienes crearon el widget Container. Podr\xeda haber sido creado de manera diferente, y debe leer la documentaci\xf3n del contenedor para comprender c\xf3mo se comporta, seg\xfan las circunstancias."}}
 A.yH.prototype={
 F(a){var s=null
 return A.eH(A.ba(s,A.ba(s,s,B.bf,s,30,s,s,30),B.A,s,s,s,s,s),s,s)},
-gbo(){return"Center(\n   child: Container(color: Colors.pink\n      child: Container(color: lila, width: 30, height: 30)))"},
+gbo(){return"Center(\n   child: Container(color: Colors.blue\n      child: Container(color: lila, width: 30, height: 30)))"},
 gbr(){return'El Centro le dice al Contenedor rosa que puede ser del tama\xf1o que quiera, pero no m\xe1s grande que la pantalla.Dado que el Contenedor rosa no tiene tama\xf1o pero tiene un hijo, decide que quiere ser del mismo tama\xf1o que su hijo.El Contenedor rosa le dice a su hijo que puede ser del tama\xf1o que quiera, pero no m\xe1s grande que la pantalla.El ni\xf1o es un Contenedor verde que quiere ser de 30x30.Dado que el "Contenedor" rosa no tiene tama\xf1o pero tiene un hijo, decide que quiere ser del mismo tama\xf1o que su hijo. El color rosa no es visible, ya que el Contenedor lila cubre completamente todo el Contenedor rosa.'}}
 A.yI.prototype={
 F(a){var s=null
 return A.eH(A.ba(s,A.ba(s,s,B.bf,s,30,s,s,30),B.A,s,s,s,B.xg,s),s,s)},
-gbo(){return"Center(\n   child: Container(color: Colors.pink\n      padding: const EdgeInsets.all(20.0),\n      child: Container(color: lila, width: 30, height: 30)))"},
+gbo(){return"Center(\n   child: Container(color: Colors.blue\n      padding: const EdgeInsets.all(20.0),\n      child: Container(color: lila, width: 30, height: 30)))"},
 gbr(){return"El contenedor rosa se ajusta al tama\xf1o de sus hijos, pero tiene en cuenta su propio relleno. As\xed que tambi\xe9n es 30x30 m\xe1s relleno. El color rosa es visible debido al relleno, y el Contenedor lila tiene el mismo tama\xf1o que en el ejemplo anterior."}}
 A.yJ.prototype={
 F(a){var s=null
 return new A.dX(B.cD,A.ba(s,s,B.A,s,10,s,s,10),s)},
-gbo(){return"ConstrainedBox(\n   constraints: BoxConstraints(\n              minWidth: 70, minHeight: 70,\n              maxWidth: 150, maxHeight: 150),\n      child: Container(color: Colors.pink, width: 10, height: 10)))"},
+gbo(){return"ConstrainedBox(\n   constraints: BoxConstraints(\n              minWidth: 70, minHeight: 70,\n              maxWidth: 150, maxHeight: 150),\n      child: Container(color: Colors.blue, width: 10, height: 10)))"},
 gbr(){return"Puede suponer que el contenedor debe tener entre 70 y 150 p\xedxeles, pero estar\xeda equivocado. ConstrainedBox solo impone restricciones ADICIONALES de las que recibe de su padre.\n\nAqu\xed, la pantalla obliga a ConstrainedBox a tener exactamente el mismo tama\xf1o que la pantalla, entonces le dice a su contenedor secundario que tambi\xe9n asuma el tama\xf1o de la pantallaignorando as\xed su par\xe1metro 'restricciones'."}}
 A.yi.prototype={
 F(a){var s=null
 return A.eH(new A.dX(B.cD,A.ba(s,s,B.A,s,10,s,s,10),s),s,s)},
-gbo(){return"Center(\n   child: ConstrainedBox(\n      constraints: BoxConstraints(\n                 minWidth: 70, minHeight: 70,\n                 maxWidth: 150, maxHeight: 150),\n        child: Container(color: Colors.pink, width: 10, height: 10))))"},
+gbo(){return"Center(\n   child: ConstrainedBox(\n      constraints: BoxConstraints(\n                 minWidth: 70, minHeight: 70,\n                 maxWidth: 150, maxHeight: 150),\n        child: Container(color: Colors.blue, width: 10, height: 10))))"},
 gbr(){return"Ahora, Center permite que ConstrainedBox tenga cualquier tama\xf1o hasta el tama\xf1o de la pantalla.\n\nConstrainedBox impone restricciones ADICIONALES desde su par\xe1metro 'constraints' a su hijo.\n\nEl contenedor debe tener entre 70 y 150 p\xedxeles. Quiere tener 10 p\xedxeles, por lo que terminar\xe1 teniendo 70 (el M\xcdNIMO)."}}
 A.yj.prototype={
 F(a){var s=null
 return A.eH(new A.dX(B.cD,A.ba(s,s,B.A,s,1000,s,s,1000),s),s,s)},
-gbo(){return"Center(\n   child: ConstrainedBox(\n      constraints: BoxConstraints(\n                 minWidth: 70, minHeight: 70,\n                 maxWidth: 150, maxHeight: 150),\n        child: Container(color: Colors.pink, width: 1000, height: 1000))))"},
+gbo(){return"Center(\n   child: ConstrainedBox(\n      constraints: BoxConstraints(\n                 minWidth: 70, minHeight: 70,\n                 maxWidth: 150, maxHeight: 150),\n        child: Container(color: Colors.blue, width: 1000, height: 1000))))"},
 gbr(){return"Center permite que ConstrainedBox tenga cualquier tama\xf1o hasta el tama\xf1o de la pantalla.ConstrainedBox impone restricciones ADICIONALES desde su par\xe1metro 'constraints' a su hijo\n\nEl contenedor debe tener entre 70 y 150 p\xedxeles. Quiere tener 1000 p\xedxeles, por lo que acaba teniendo 150 (el M\xc1XIMO)."}}
 A.yk.prototype={
 F(a){var s=null
 return A.eH(new A.dX(B.cD,A.ba(s,s,B.A,s,100,s,s,100),s),s,s)},
-gbo(){return"Center(\n   child: ConstrainedBox(\n      constraints: BoxConstraints(\n                 minWidth: 70, minHeight: 70,\n                 maxWidth: 150, maxHeight: 150),\n        child: Container(color: Colors.pink, width: 100, height: 100))))"},
+gbo(){return"Center(\n   child: ConstrainedBox(\n      constraints: BoxConstraints(\n                 minWidth: 70, minHeight: 70,\n                 maxWidth: 150, maxHeight: 150),\n        child: Container(color: Colors.blue, width: 100, height: 100))))"},
 gbr(){return"Center permite que ConstrainedBox tenga cualquier tama\xf1o hasta el tama\xf1o de la pantalla.ConstrainedBox impone restricciones ADICIONALES desde su par\xe1metro 'constraints' a su hijo.\n\nEl contenedor debe tener entre 70 y 150 p\xedxeles. Quiere tener 100 p\xedxeles, y ese es el tama\xf1o que tiene, ya que est\xe1 entre 70 y 150."}}
 A.yl.prototype={
 F(a){var s=null
 return A.XD(A.ba(s,s,B.A,s,50,s,s,20))},
-gbo(){return"UnconstrainedBox(\n   child: Container(color: Colors.pink, width: 20, height: 50));"},
+gbo(){return"UnconstrainedBox(\n   child: Container(color: Colors.blue, width: 20, height: 50));"},
 gbr(){return"La pantalla obliga a UnconstrainedBox a tener exactamente el mismo tama\xf1o que la pantalla.Sin embargo, UnconstrainedBox permite que su contenedor secundario tenga el tama\xf1o que desee."}}
 A.ym.prototype={
 F(a){var s=null
 return A.XD(A.ba(s,s,B.A,s,50,s,s,4000))},
-gbo(){return"UnconstrainedBox(\n   child: Container(color: Colors.pink, width: 4000, height: 50));"},
+gbo(){return"UnconstrainedBox(\n   child: Container(color: Colors.blue, width: 4000, height: 50));"},
 gbr(){return'La pantalla obliga a UnconstrainedBox a tener exactamente el mismo tama\xf1o que la pantalla, y UnconstrainedBox permite que su Contenedor secundario tenga el tama\xf1o que desee.\n\nDesafortunadamente, en este caso, el contenedor tiene 4000 p\xedxeles de ancho y es demasiado grande para caber en el cuadro sin restricciones.entonces UnconstrainedBox muestra la tan temida "advertencia de desbordamiento".'}}
 A.yn.prototype={
 F(a){var s=null
 return new A.Aq(0,1/0,0,1/0,A.ba(s,s,B.A,s,50,s,s,4000),s)},
-gbo(){return"OverflowBox(\n   minWidth: 0.0,   minHeight: 0.0,   maxWidth: double.infinity,   maxHeight: double.infinity,   child: Container(color: Colors.pink, width: 4000, height: 50));"},
+gbo(){return"OverflowBox(\n   minWidth: 0.0,   minHeight: 0.0,   maxWidth: double.infinity,   maxHeight: double.infinity,   child: Container(color: Colors.blue, width: 4000, height: 50));"},
 gbr(){return"La pantalla obliga al OverflowBox a tener exactamente el mismo tama\xf1o que la pantalla, y OverflowBox permite que su contenedor secundario tenga el tama\xf1o que desee.\n\nOverflowBox es similar a UnconstrainedBox, y la diferencia es que no mostrar\xe1 ninguna advertencia si el ni\xf1o no cabe en el espacio.En este caso, el Contenedor tiene 4000 p\xedxeles de ancho y es demasiado grande para caber en el OverflowBox.pero el OverflowBox simplemente muestra todo lo que puede, sin dar advertencias."}}
 A.yo.prototype={
 F(a){var s=null
 return A.XD(A.ba(s,s,B.A,s,100,s,s,1/0))},
-gbo(){return"UnconstrainedBox(\n   child: Container(color: Colors.pink, width: double.infinity, height: 100));"},
+gbo(){return"UnconstrainedBox(\n   child: Container(color: Colors.blue, width: double.infinity, height: 100));"},
 gbr(){return'Esto no generar\xe1 nada y ver\xe1 un error en la consola.\n\nThe UnconstrainedBox permite que su hijo sea del tama\xf1o que quiera,sin embargo, su hijo es un Contenedor de tama\xf1o infinito.\n\nFlutter no puede representar tama\xf1os infinitos, por lo que arroja un error con el siguiente mensaje: "BoxConstraints fuerza un ancho infinito".'}}
 A.yp.prototype={
 F(a){var s=null
 return A.XD(A.a6K(A.ba(s,s,B.A,s,100,s,s,1/0),1/0,100))},
-gbo(){return"UnconstrainedBox(\n   child: LimitedBox(maxWidth: 100,\n      child: Container(color: Colors.pink,\n                       width: double.infinity, height: 100));"},
+gbo(){return"UnconstrainedBox(\n   child: LimitedBox(maxWidth: 100,\n      child: Container(color: Colors.blue,\n                       width: double.infinity, height: 100));"},
 gbr(){return"Aqu\xed ya no obtendr\xe1s un error, porque cuando el UnconstrainedBox le da a LimitedBox un tama\xf1o infinito, pasa un ancho m\xe1ximo de 100 hasta su hijo.\n\nSi cambia el UnconstrainedBox por un widget Center, LimitedBox ya no aplicar\xe1 su l\xedmite (ya que su l\xedmite solo se aplica cuando tiene restricciones infinitas), y se permite que el ancho del Contenedor crezca m\xe1s all\xe1 de 100.\n\nEsto explica la diferencia entre un LimitedBox y un ConstrainedBox."}}
 A.yq.prototype={
 F(a){return B.lb},
@@ -31306,27 +31306,27 @@ gbr(){return"FittedBox solo puede escalar un widget que est\xe1 LIMITADO (no tie
 A.yw.prototype={
 F(a){var s=null
 return A.mR(A.a([A.ba(s,B.HB,B.A,s,s,s,s,s),A.ba(s,B.cv,B.bf,s,s,s,s,s)],t.p),B.aW)},
-gbo(){return"Row(children:[\n   Container(color: Colors.pink, child: Text('Hola!'))\n   Container(color: lila, child: Text('Adi\xf3s!'))]"},
+gbo(){return"Row(children:[\n   Container(color: Colors.blue, child: Text('Hola!'))\n   Container(color: lila, child: Text('Adi\xf3s!'))]"},
 gbr(){return"La pantalla obliga a que la Fila sea exactamente del mismo tama\xf1o que la pantalla.\n\nAl igual que un UnconstrainedBox, Row no impondr\xe1 ninguna restricci\xf3n a sus elementos secundariosy en cambio les permite ser del tama\xf1o que quieran.\n\nThe Row luego los coloca uno al lado del otro, y cualquier espacio adicional permanece vac\xedo."}}
 A.yx.prototype={
 F(a){var s=null
 return A.mR(A.a([A.ba(s,B.jA,B.A,s,s,s,s,s),A.ba(s,B.cv,B.A,s,s,s,s,s)],t.p),B.aW)},
-gbo(){return"Row(children:[\n   Container(color: Colors.pink, child: Text('\u2026'))\n   Container(color: green, child: Text('Adi\xf3s!'))]"},
+gbo(){return"Row(children:[\n   Container(color: Colors.blue, child: Text('\u2026'))\n   Container(color: green, child: Text('Adi\xf3s!'))]"},
 gbr(){return'Dado que Row no impondr\xe1 ninguna restricci\xf3n a sus hijos, Es muy posible que los ni\xf1os sean demasiado grandes para caber en el ancho disponible de la Fila.En este caso, al igual que un UnconstrainedBox, la Fila muestra la "advertencia de desbordamiento".'}}
 A.yy.prototype={
 F(a){var s=null
 return A.mR(A.a([A.NR(A.eH(A.ba(s,B.HE,B.A,s,s,s,s,s),s,s)),A.ba(s,B.cv,B.bf,s,s,s,s,s)],t.p),B.aW)},
-gbo(){return"Row(children:[\n   Expanded(\n       child: Container(color: Colors.pink, child: Text('\u2026')))\n   Container(color: lila, child: Text('Adi\xf3s!'))]"},
+gbo(){return"Row(children:[\n   Expanded(\n       child: Container(color: Colors.blue, child: Text('\u2026')))\n   Container(color: lila, child: Text('Adi\xf3s!'))]"},
 gbr(){return"Cuando el hijo de una Fila se envuelve en un widget Expandido, la Fila ya no permitir\xe1 que este hijo defina su propio ancho.\n\nEn cambio, define el ancho Expandido de acuerdo con los otros ni\xf1os, y solo entonces el widget Expandido obliga al ni\xf1o original a tener el ancho Expandido.\n\nEn otras palabras, una vez que usa Expandido, el ancho del ni\xf1o original se vuelve irrelevante y se ignora."}}
 A.yz.prototype={
 F(a){var s=null
 return A.mR(A.a([A.NR(A.ba(s,B.jA,B.A,s,s,s,s,s)),A.NR(A.ba(s,B.cv,B.bf,s,s,s,s,s))],t.p),B.aW)},
-gbo(){return"Row(children:[\n   Expanded(\n       child: Container(color: Colors.pink, child: Text('\u2026')))\n   Expanded(\n       child: Container(color: lila, child: Text('Goodbye!'))]"},
+gbo(){return"Row(children:[\n   Expanded(\n       child: Container(color: Colors.blue, child: Text('\u2026')))\n   Expanded(\n       child: Container(color: lila, child: Text('Goodbye!'))]"},
 gbr(){return"Si todos los elementos secundarios de Row's est\xe1n envueltos en widgets Expandidos, cada Expandido tiene un tama\xf1o proporcional a su par\xe1metro flexible, y solo entonces cada widget Expandido obliga a su hijo a tener el ancho de Expandido.\n\nEn otras palabras, Expanded ignora el ancho preferido de sus hijos."}}
 A.yA.prototype={
 F(a){var s=null
 return A.mR(A.a([new A.m0(1,B.ld,A.ba(s,B.jA,B.A,s,s,s,s,s),s),new A.m0(1,B.ld,A.ba(s,B.cv,B.bf,s,s,s,s,s),s)],t.p),B.aW)},
-gbo(){return"Row(children:[\n   Flexible(\n       child: Container(color: Colors.pink, child: Text('\u2026')))\n   Flexible(\n       child: Container(color: lila, child: Text('Goodbye!'))]"},
+gbo(){return"Row(children:[\n   Flexible(\n       child: Container(color: Colors.blue, child: Text('\u2026')))\n   Flexible(\n       child: Container(color: lila, child: Text('Goodbye!'))]"},
 gbr(){return"La \xfanica diferencia si usa Flexible en lugar de Expandido, es que Flexible permite que su hijo sea M\xc1S PEQUE\xd1O que el ancho de Flexible, mientras que Expandido obliga a su hijo a tener el mismo ancho que Expandido.Pero tanto Expandido como Flexible ignoran el ancho de sus hijos cuando se miden a s\xed mismos.Esto significa que es IMPOSIBLE expandir los ni\xf1os de Fila proporcionalmente a sus tama\xf1os. La Fila usa el ancho exacto del ni\xf1o o lo ignora por completo cuando usa Expandido o Flexible."}}
 A.yB.prototype={
 F(a){var s=null
